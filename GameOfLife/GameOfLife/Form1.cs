@@ -44,7 +44,20 @@ namespace GameOfLife
                     grid[x, y] = ' ';
                 }               
             }
-            if (btnCustom.Checked)
+            if (btnDefault.Checked)
+            {
+                length = 12;
+                grid[6, 6] = '*';
+                grid[7, 7] = '*';
+                grid[7, 5] = '*';
+                //grid[3, 5] = '*';
+                grid[8, 6] = '*';
+                grid[8, 8] = '*';
+                grid[6, 8] = '*';
+                grid[7, 9] = '*';
+                grid[9, 7] = '*';
+            }
+            else if (btnCustom.Checked)
             {
                 for (int i = 0; i < int.Parse(txtInput2.Text); i++)
                 {

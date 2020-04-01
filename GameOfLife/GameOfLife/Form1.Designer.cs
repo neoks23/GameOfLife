@@ -39,6 +39,7 @@
             this.btnRandom = new System.Windows.Forms.RadioButton();
             this.btnCustom = new System.Windows.Forms.RadioButton();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.btnDefault = new System.Windows.Forms.RadioButton();
             this.SuspendLayout();
             // 
             // label1
@@ -110,7 +111,7 @@
             // 
             this.btnRandom.AutoSize = true;
             this.btnRandom.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnRandom.Location = new System.Drawing.Point(458, 31);
+            this.btnRandom.Location = new System.Drawing.Point(458, 50);
             this.btnRandom.Name = "btnRandom";
             this.btnRandom.Size = new System.Drawing.Size(82, 21);
             this.btnRandom.TabIndex = 7;
@@ -122,7 +123,7 @@
             // 
             this.btnCustom.AutoSize = true;
             this.btnCustom.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnCustom.Location = new System.Drawing.Point(458, 55);
+            this.btnCustom.Location = new System.Drawing.Point(458, 77);
             this.btnCustom.Name = "btnCustom";
             this.btnCustom.Size = new System.Drawing.Size(76, 21);
             this.btnCustom.TabIndex = 8;
@@ -130,12 +131,26 @@
             this.btnCustom.Text = "Custom";
             this.btnCustom.UseVisualStyleBackColor = true;
             // 
+            // btnDefault
+            // 
+            this.btnDefault.AutoSize = true;
+            this.btnDefault.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnDefault.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnDefault.Location = new System.Drawing.Point(458, 23);
+            this.btnDefault.Name = "btnDefault";
+            this.btnDefault.Size = new System.Drawing.Size(74, 21);
+            this.btnDefault.TabIndex = 9;
+            this.btnDefault.TabStop = true;
+            this.btnDefault.Text = "Default";
+            this.btnDefault.UseVisualStyleBackColor = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(615, 494);
+            this.Controls.Add(this.btnDefault);
             this.Controls.Add(this.btnCustom);
             this.Controls.Add(this.btnRandom);
             this.Controls.Add(this.txtInput2);
@@ -164,6 +179,7 @@
         private System.Windows.Forms.RadioButton btnRandom;
         private System.Windows.Forms.RadioButton btnCustom;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.RadioButton btnDefault;
     }
 }
 
